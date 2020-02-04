@@ -1,0 +1,14 @@
+{
+  "name": "repro-yarn-3137",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Cristian Lorsson <cristian@cristian.im>",
+  "license": "MIT",
+  "scripts": {
+    "bump-deps": "DATE=$(date +%s); cat dep-1/package.json | sed '3s/.*/  \"version\": \"0.0.1-'$DATE'\",/' | tee dep-1/package.json > /dev/null && cat dep-2/package.json | sed '3s/.*/  \"version\": \"0.0.1-'$DATE'\",/' | tee dep-2/package.json > /dev/null"
+  },
+  "devDependencies": {
+    "repro-yarn-3137-dep1": "file:dep-1",
+    "repro-yarn-3137-dep2": "file:dep-2"
+  }
+}

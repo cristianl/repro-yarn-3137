@@ -1,0 +1,7 @@
+{
+  "name": "repro-yarn-3137-dep1",
+  "version": "0.0.1-default",
+  "main": "index.js",
+  "author": "Cristian Lorsson <cristian@cristian.im>",
+  "license": "MIT"
+}
